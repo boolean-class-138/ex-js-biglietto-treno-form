@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS biglietto treno form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <form id="create-ticket-form">
+        <div>
+            <label for="full-name">Nome Cognome</label>
+            <input id="full-name" type="text" placeholder="Inserisci il tuo nome..." required>
+        </div>
+        <div>
+            <label for="km">Km da percorrere</label>
+            <input id="km" type="number" min="1" value="1" required>
+        </div>
+        <div>
+            <label for="age">Fascia d'età</label>
+            <select id="age">
+                <option value="">Maggiorenne</option>
+                <option value="under">Minorenne</option>
+                <option value="over">Over 65</option>
+            </select>
+        </div>
+        <div>
+            <button id="btn-create" type="submit">Genera</button>
+            <button id="btn-reset" type="reset">Annulla</button>
+        </div>
+    </form>
+    <hr>
+    <div id="ticket" class="d-none">
+        <div id="ticket-name"></div>
+        <div id="ticket-offert"></div>
+        <div id="ticket-train-car"></div>
+        <div id="ticket-cp-code"></div>
+        <div id="ticket-price"></div>
+    </div>
+
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
